@@ -12,7 +12,7 @@ const ApiURL = () => {
 };
 
 const API = axios.create({
-  baseURL: ApiURL(),
+  baseURL: "http://10.74.106.142:3000",   //your LAN IP
   headers: { 'Content-Type': "application/json" }
 });
 

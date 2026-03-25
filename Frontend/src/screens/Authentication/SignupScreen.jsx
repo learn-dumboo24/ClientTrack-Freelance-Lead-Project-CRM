@@ -126,7 +126,14 @@ export default function SignupScreen({ navigation }) {
         </View>
 
         <Text style={styles.footer}>
-          By signing up, you agree to our Terms & Privacy Policy
+          By signing up, you agree to our{" "}
+          <Text style={styles.linkBold} onPress={() => navigation.navigate("Terms")}>
+            Terms
+          </Text>{" "}
+          &{" "}
+          <Text style={styles.linkBold} onPress={() => navigation.navigate("PrivacyPolicy")}>
+            Privacy Policy
+          </Text>
         </Text>
       </ScrollView>
     </KeyboardAvoidingView>
